@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="body-color">
+
+    <!-- get information from server -->
+    <section>
+    <div class="posts-wrapper" id="posts-wrapper">
+    </div>
+    <div class="overlay" id="overlay">
+    <div class="content" id="content"></div>
+    <div class="close" id="close">X</div>
+    </div>
+    </section>
+    <!-- add new post -->
+    <section>
+        <div  class="services" id="services">
+            <button class="addservices" id="addservices">
+                Add  new dish
+            </button>   
+        </div>
+        <!-- form -->
+        <div class="form" id="form">
+            <form action="" id="registration">
+                <p id="product-p-tag">Add new dish</p>
+                
+                <div id="close-3">X</div>
+                <div class="title-line"></div>
+                <div>
+                    <label class="paragrapform" for="fname">Dish title<span class="must">*</span></label>
+                    <input type="text" id="ptitle" name="ptitle" />
+                    <span class="error-text" id="error_ptitle"></span>
+                </div>
+
+                <div class="formimg">
+                    <label  class="paragrapform" for="Description">Recipe:<span class="must">*</span></label>
+                    <textarea name="description" class="description" id="description" cols="30" rows="6" placeholder="Description"></textarea>
+                    <span class="error-text"
+                    id="error_description"></span>
+                </div>
+                <div class="formimg">
+
+                <label class="paragrapform" for="imginput">Photo of the dish<span class="must">*</span></label>
+                <input type="file" id="imginput" class="imginput" name="imginput" >
+                <span class="error-text" id="error_imginput"></span>
+                </div>
+                <div>
+                    <input type="checkbox" name="agree" id="checkagree">
+                    <label for="checkagree"> i agree conditions</label>
+                    <span class="error-text" id="error_agree"></span>
+        
+                </div>
+                <div class="allbutton">
+                    
+                     <button id="savebutton" class="formbutton bt2"> Save </button>
+                     <button class="formbutton bt1" id="close-2"> Close</button>
+                </div>
+
+            </form>
+            </div>  
+                 
+        <div id="adddive">
+        
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
